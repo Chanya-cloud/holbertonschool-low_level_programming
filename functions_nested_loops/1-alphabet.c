@@ -1,6 +1,16 @@
-#include <unistd.h>
+#include "main.h"
 
-int _putchar(char c)
+/**
+ * print_alphabet - prints the alphabet in lowercase
+ */
+void print_alphabet(void)
 {
-	return (write(1, &c, 1));
+    char c = 'a';
+
+    while (c <= 'z')
+    {
+        _putchar(c);
+        c++;
+    }
+    _putchar('\n');
 }
